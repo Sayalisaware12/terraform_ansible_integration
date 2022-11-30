@@ -62,8 +62,8 @@ depends_on = [aws_instance.os1]
 connection {
 	type     = "ssh"
 	user     = "root"
-	password = "${var.password}"
-    	host= "${var.host}" 
+	password = "${var.password1}"
+    	host= "${var.host1}" 
 }
 #copying the ip.txt file to the Ansible control node from local system
 provisioner "file" {
